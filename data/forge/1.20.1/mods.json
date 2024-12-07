@@ -3,8 +3,15 @@
         "name": "angry mobs",
         "filename": "angry-mobs.jar",
         "url": "",
+        "img": "",
+        "side": "",
+        "active": true,
+        "description": "Mobs are angry and will attack you on sight.",
         "tags": [
             "mobs"
+        ],
+        "dependencies": [
+
         ]
     }
 ]
