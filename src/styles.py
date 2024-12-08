@@ -4,24 +4,20 @@ class Fonts:
     def __init__(self):
         self.family = "Bahnschrift"
         self.title = customtkinter.CTkFont(family = self.family, size = 35, weight = "bold")
+        self.modTitle = customtkinter.CTkFont(family = self.family, size = 20, weight = "normal")
 
 class Colors:
     def __init__(self):
-        # Black, white & brown colors
+        # Ordered from light to dark
         self.transparent = "transparent"
-        self.cream = "#fffdd0"
+        self.black = "black"
+        self.white = "white"
+        
+        self.cream = "#ede4de"
+        self.darkcream = "#d5cdc7" # brownish
+        
+        self.biscotti = "#dac09b" # subtle
         self.latte = "#d0bca1" # literally like the coffee, darker than biscotti
         self.toffee = "#9f815b" # darker than latte
         self.cocoa = "#80614a" # very dark, like the cocoa seed
-        self.biscotti = "#dac09b" # subtle, similar
         
-        # Yellow colors
-        self.strongyellow = "#ffc107"
-        self.lightyellow = "#fbff10"
-        self.darkyellow = "#191800"
-        
-        # Blue colors
-        self.foxcream = "#ede4de"
-        self.bluesky = "#67a7ff"
-        self.lightblue = "#c2e9fb"
-        self.seafom = "#00c4cd"

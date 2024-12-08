@@ -12,7 +12,7 @@ class App(customtkinter.CTk):
         super().__init__()
         
         self.assets_path = "./assets"
-        icon_path = f"{self.assets_path}/icos/fox.ico"
+        icon_path = f"{self.assets_path}/icos/ghost.ico"
         
         # ~ ~ ~ ~ ~ ~ ~ ~ App setup ~ ~ ~ ~ ~ ~ ~ ~ #
         
@@ -20,7 +20,7 @@ class App(customtkinter.CTk):
         self.fonts = styles.Fonts()
         self.colors = styles.Colors()
         
-        self.configure(fg_color=self.colors.foxcream)
+        self.configure(fg_color=self.colors.cream)
 
         # Center the window
         screen_width = self.winfo_screenwidth()
@@ -42,10 +42,8 @@ class App(customtkinter.CTk):
         self.body = Body(self)
         
         # place content
-        self.header.place(relx=0, rely=0, anchor="nw", relwidth=1.01, relheight=0.2)
-        self.body.place(relx=0, rely=0.2, anchor="nw", relwidth=1.01, relheight=0.8)
-        
-
+        self.header.place(relx=0, rely=0, anchor="nw", relwidth=1.0001, relheight=0.2)
+        self.body.place(relx=0, rely=0.2, anchor="nw", relwidth=1.0001, relheight=0.8)
 
 if __name__ == "__main__":
     customtkinter.set_appearance_mode("dark")  # Modes: system (default), light, dark

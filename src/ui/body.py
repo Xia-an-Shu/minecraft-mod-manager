@@ -1,5 +1,7 @@
 import customtkinter
 import styles
+from ui.mods import Mods
+from ui.controls import Controls
 
 class Body (customtkinter.CTkFrame):
     
@@ -11,13 +13,26 @@ class Body (customtkinter.CTkFrame):
         
         # prepare frame args
         kwargs = {
-            "corner_radius": 0,
-            "bg_color": self.colors.transparent, # Change this to change background color
+            "corner_radius": 20,
+            "bg_color": self.colors.cocoa, # Change this to change background color
             "fg_color": self.colors.transparent, # Leave as transparent always
             "border_color": None,
             "border_width": 0,
-            "background_corner_colors": (None, None, None, None)
+            "background_corner_colors": (self.colors.cream, self.colors.cream, None, None)
         }
         
         # call super with updated kwargs
         super().__init__(master, **kwargs)
+        
+        # other contents
+        self.set_modlist()
+        self.set_controls()
+        
+    def set_modlist(self):
+        items = [f"item {i}" for i in range(1, 100)]
+        self.mods = Mods(self, items)
+        self.mods.place(relx=0.05, rely=0.1, anchor="nw", relwidth=0.6, relheight=0.8)
+        
+    def set_controls(self):
+        self.controls = Controls(self)
+        self.controls.place(relx=0.7, rely=0.1, anchor="nw", relwidth=0.25, relheight=0.8)

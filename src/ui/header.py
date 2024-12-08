@@ -17,7 +17,7 @@ class Header (customtkinter.CTkFrame):
             "border_color": None,
             "border_width": 0,
             "background_corner_colors": (None, None, None, None)
-        }
+        } 
         
         # call super with updated kwargs
         super().__init__(master, **kwargs)
