@@ -29,10 +29,9 @@ class Body (customtkinter.CTkFrame):
         self.set_controls()
         
     def set_modlist(self):
-        items = [f"item {i}" for i in range(1, 100)]
-        self.mods = Mods(self, items)
-        self.mods.place(relx=0.05, rely=0.1, anchor="nw", relwidth=0.6, relheight=0.8)
+        self.mods = Mods(self)
+        self.mods.place(relx=0.05, rely=0.1, anchor="nw", relwidth=0.5, relheight=0.8)
         
     def set_controls(self):
         self.controls = Controls(self)
-        self.controls.place(relx=0.7, rely=0.1, anchor="nw", relwidth=0.25, relheight=0.8)
+        self.controls.place(relx=0.6, rely=0.1, anchor="nw", relwidth=0.35, relheight=0.8)

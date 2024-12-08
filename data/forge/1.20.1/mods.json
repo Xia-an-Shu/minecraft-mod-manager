@@ -4,7 +4,7 @@
         "filename": "angry-mobs.jar",
         "url": "",
         "img": "",
-        "side": "",
+        "side": "both",
         "active": true,
         "description": "Mobs are angry and will attack you on sight.",
         "tags": [
